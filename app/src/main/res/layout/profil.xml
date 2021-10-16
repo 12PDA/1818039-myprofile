@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation ="horizontal"
+        tools:ignore="Suspicious0dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_favorite_border_24" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_more_vert_24" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="80dp"
+        android:paddingBottom="32dp" >
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/foto"
+
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-black"
+            android:textSize="22dp"
+            android:paddingBottom="3dp"
+            android:text="Praditasari Dyah A" />
+
+        <TextView
+            android:id="@+id/txt_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="3dp"
+            android:text="Surabaya, 12 Agustus 2000" />
+
+        <TextView
+            android:id="@+id/txt_jurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="9dp"
+            android:text="S1 - Teknik Informatika" />
+
+        <TextView
+            android:id="@+id/txt_kampus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-black"
+            android:text="ITN MALANG" />
+
+        <Button
+            android:id="@+id/btn_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="#59abe3"
+            android:drawableLeft="@drawable/ic_baseline_person_add_alt_1_24"
+            android:drawableTint="@color/white"
+            android:text="IKUTI" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-black"
+            android:textSize="24dp"
+            android:paddingTop="60dp"
+            android:textColor="#59abe3"
+            android:drawableLeft="@drawable/ic_baseline_turned_in_24"
+            android:drawableTint="#59abe3"
+            android:text="Riwayat Pendidikan" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="28dp"
+            android:paddingTop="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="16dp"
+            android:text="2007 - 2012    : SDN Petemon Surabaya"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="28dp"
+            android:paddingTop="10dp"
+            android:textSize="16dp"
+            android:text="2012 - 2015    : SMPN 16 Malang"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="28dp"
+            android:paddingTop="10dp"
+            android:textSize="16dp"
+            android:text="2015 - 2018    : SMKN 8 Malang"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
